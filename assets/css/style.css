@@ -2,7 +2,7 @@
 :root {
     --header-height: 3.5rem;
     --first-color: #4a90e2;
-    --first-color-alt: #357abd;
+    --first-color-alt: #12c736;
     --title-color: #333333;
     --text-color: #555555;
     --text-color-light: #777777;
@@ -14,8 +14,8 @@
     --z-fixed: 100;
 
     /* Colors */
-    --first-color: #4a90e2;
-    --first-color-alt: #357abd;
+    --first-color: #a92e12;
+    --first-color-alt: #7fbf8e;
     -.nav__link {
     color: var(--header-text-color);
     font-weight: var(--font-medium);
