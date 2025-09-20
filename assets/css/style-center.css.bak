@@ -1,0 +1,223 @@
+/* Additional centering styles */
+.section {
+    padding: 6rem 0 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__img img {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact__form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.skills__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skills__data {
+    text-align: center;
+    width: 100%;
+}
+
+.footer__container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 768px) {
+    .home__content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .about__content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+
+    .skills__content {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact__container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+/* Ensure images are centered */
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Center buttons */
+.button {
+    margin: 1rem auto;
+    display: inline-block;
+}
+
+/* Center form elements */
+.form__group {
+    text-align: center;
+}
+
+.form__input {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Center social icons */
+.contact__social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Global centering styles */
+.home__content,
+.about__container,
+.skills__container,
+.portfolio__container,
+.services__container,
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.section__title,
+.section__subtitle,
+p,
+.about__description,
+.services__description,
+.contact__description {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.portfolio__content,
+.services__content {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+/* Make images centered */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Center buttons and links */
+.button,
+.nav__link {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Center contact form */
+.contact__form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__input {
+    width: 100%;
+    text-align: center;
+}
+
+/* Center About section content */
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about__data {
+    text-align: center;
+}
+
+.about__info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.about__box {
+    text-align: center;
+    margin: 1rem;
+}
+
+.about__description {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}

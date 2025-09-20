@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/style-center.css">
     <link rel="stylesheet" href="/assets/css/style-skills.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/sections-center.css">
+    <link rel="stylesheet" href="/assets/css/theme.css">
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -34,10 +37,19 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link active">About</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link active">Portfolio</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link active">Services</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link active">Contact</a></li>
+                    <li class="nav__item">
+                        <div class="theme-switcher">
+                            <select id="theme-select" class="theme-select">
+                                <option value="light">Light</option>
+                                <option value="dark">Dark</option>
+                                <option value="auto">Auto</option>
+                            </select>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="nav__toggle" id="nav-toggle">
@@ -72,7 +84,8 @@
         </section>
         <!-- About Section -->
         <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
+            <center>
+            <h2 class="section__title">About Me</h2></center>
             <div class="about__container container">
                 <div class="about__content">
                     <div class="about__data">
@@ -84,15 +97,21 @@
                         </p>
                         
                         <div class="about__info">
-                            <div class="about__box">
-                                <i class="fas fa-graduation-cap"></i>
-                                <h3>Education</h3>
-                                <p>B.Tech in Computer Science & Engineering</p>
+                            <div class="about__box education-box">
+                                <i class="fas fa-graduation-cap education-icon"></i>
+                                <h3 class="education-title">Education</h3>
+                                <div class="education-content">
+                                    <p class="education-course">B.Tech in Computer Science & Engineering</p>
+                                    <p class="education-institute">Babu Banarasi Das University</p>
+                                    <div class="education-details">
+                                        <span class="education-year">2023 - 2027</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="about__skills">
-                        <h3>Skills</h3>
+                        <h3 class="skills-title">Skills</h3>
                         <div class="skills__content">
                             <div class="skills__box">
                                 <div class="skills__group">
@@ -158,7 +177,8 @@
 
         <!-- Portfolio Section -->
         <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
+            <center>
+            <h2 class="section__title">Portfolio</h2></center>
             <div class="portfolio__container container">
                 <!-- Project 1 -->
                 <div class="portfolio__card">
@@ -212,7 +232,8 @@
 
         <!-- Services Section -->
         <section class="services section" id="services">
-            <h2 class="section__title">Services</h2>
+            <center>
+            <h2 class="section__title">Services</h2></center>
             <div class="services__container container">
                 <div class="services__card">
                     <i class="fas fa-code"></i>
@@ -242,7 +263,8 @@
 
         <!-- Contact Section -->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
+           <center> 
+            <h2 class="section__title">Contact Me</h2></center>
             <div class="contact__container container">
                 <div class="contact__content">
                     <div class="contact__info">

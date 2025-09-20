@@ -1,4 +1,125 @@
-/* Skills Section Styles */
+/* Education and Skills Section Styling */
+.about__info {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(74, 144, 226, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    align-items: center;
+}
+
+.education-box {
+    position: relative;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(74, 144, 226, 0.1);
+}
+
+.education-icon {
+    font-size: 2.5rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.education-title {
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.education-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--first-color);
+    border-radius: 2px;
+}
+
+.education-content {
+    margin-top: 1.5rem;
+}
+
+.education-course {
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+}
+
+.education-institute {
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 1rem;
+}
+
+.education-year {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--first-color);
+    color: white;
+    border-radius: 25px;
+    font-size: var(--small-font-size);
+    margin-top: 1rem;
+}
+
+/* Skills Section Styling */
+.about__skills {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px dashed rgba(74, 144, 226, 0.2);
+}
+
+.skills-title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.skills-title::before {
+    content: '⚡';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.skills-title::after {
+    content: '⚡';
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+/* Animation for floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Skills section styles */
 .skills__data {
     display: flex;
     align-items: flex-start;
