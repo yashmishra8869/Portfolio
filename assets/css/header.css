@@ -53,11 +53,11 @@
 }
 
 .nav__link:hover {
-    color: #0a2be6;
+    color: #465eeb;
 }
 
 .nav__link.active {
-    color: #38b325;
+    color: #6682dd;
 }
 
 /* Theme switcher */
