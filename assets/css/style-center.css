@@ -116,3 +116,43 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Center About section content */
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about__data {
+    text-align: center;
+}
+
+.about__info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.about__box {
+    text-align: center;
+    margin: 1rem;
+}
+
+.about__description {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
