@@ -188,7 +188,7 @@
                         <p class="portfolio__description">Modern and responsive portfolio website showcasing my skills
                             and projects.</p>
                         <p class="portfolio__tech">HTML, CSS, JavaScript</p>
-                        <a href="#" class="button button--small">View Project</a>
+                        <a href="https://portfolio-fxhb38o9g-yash-mishras-projects-57ae26b3.vercel.app/#" target="_blank" class="button button--small">View Project</a>
                     </div>
                 </div>
 
@@ -200,7 +200,7 @@
                         <p class="portfolio__description">A modern landing page with smooth animations and responsive
                             design.</p>
                         <p class="portfolio__tech">HTML, CSS, JavaScript</p>
-                        <a href="#" class="button button--small">View Project</a>
+                        <button onclick="openModal('landing-modal')" class="button button--small">View Project</button>
                     </div>
                 </div>
 
@@ -212,7 +212,7 @@
                         <p class="portfolio__description">Interactive calculator with basic and scientific functions.
                         </p>
                         <p class="portfolio__tech">HTML, CSS, JavaScript</p>
-                        <a href="#" class="button button--small">View Project</a>
+                        <button onclick="openModal('calculator-modal')" class="button button--small">View Project</button>
                     </div>
                 </div>
 
@@ -224,7 +224,97 @@
                         <p class="portfolio__description">Task management application with local storage functionality.
                         </p>
                         <p class="portfolio__tech">HTML, CSS, JavaScript</p>
-                        <a href="#" class="button button--small">View Project</a>
+                        <button onclick="openModal('todo-modal')" class="button button--small">View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Modals -->
+            <div id="portfolio-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('portfolio-modal')">&times;</span>
+                    <div class="modal-header">
+                        <h2 class="modal-title">Personal Portfolio Website</h2>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/assets/images/logo.png" alt="Portfolio Website">
+                        <p class="modal-description">A modern and responsive portfolio website built to showcase my skills, projects, and professional journey. Features a clean design, smooth animations, and interactive elements.</p>
+                        <p class="modal-tech">Technologies: HTML, CSS, JavaScript</p>
+                        <p>Key Features:</p>
+                        <ul>
+                            <li>Responsive design that works on all devices</li>
+                            <li>Dark/Light theme switcher</li>
+                            <li>Smooth scrolling navigation</li>
+                            <li>Interactive project showcase</li>
+                            <li>Contact form integration</li>
+                        </ul>
+                        <a href="https://portfolio-fxhb38o9g-yash-mishras-projects-57ae26b3.vercel.app/#" target="_blank" class="button">Visit Live Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="landing-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('landing-modal')">&times;</span>
+                    <div class="modal-header">
+                        <h2 class="modal-title">Responsive Landing Page</h2>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/assets/images/landingpagelogo.png" alt="Landing Page">
+                        <p class="modal-description">A modern landing page template with smooth animations and fully responsive design.</p>
+                        <p class="modal-tech">Technologies: HTML, CSS, JavaScript</p>
+                        <p>Key Features:</p>
+                        <ul>
+                            <li>Modern and clean design</li>
+                            <li>Smooth scroll animations</li>
+                            <li>Responsive layout</li>
+                            <li>Interactive elements</li>
+                            <li>Optimized performance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="calculator-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('calculator-modal')">&times;</span>
+                    <div class="modal-header">
+                        <h2 class="modal-title">Web Calculator</h2>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/assets/images/webcalclogo.png" alt="Web Calculator">
+                        <p class="modal-description">An interactive calculator web application with both basic and scientific calculation capabilities.</p>
+                        <p class="modal-tech">Technologies: HTML, CSS, JavaScript</p>
+                        <p>Key Features:</p>
+                        <ul>
+                            <li>Basic arithmetic operations</li>
+                            <li>Scientific calculations</li>
+                            <li>Keyboard input support</li>
+                            <li>Responsive design</li>
+                            <li>History feature</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="todo-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('todo-modal')">&times;</span>
+                    <div class="modal-header">
+                        <h2 class="modal-title">To-Do List Application</h2>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/assets/images/todolistlogo.png" alt="Todo List">
+                        <p class="modal-description">A feature-rich task management application with local storage functionality to persist tasks.</p>
+                        <p class="modal-tech">Technologies: HTML, CSS, JavaScript</p>
+                        <p>Key Features:</p>
+                        <ul>
+                            <li>Add, edit, and delete tasks</li>
+                            <li>Mark tasks as complete</li>
+                            <li>Local storage integration</li>
+                            <li>Filter tasks by status</li>
+                            <li>Clean and intuitive interface</li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -49,6 +49,35 @@ window.addEventListener('scroll', scrollActive);
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
+    if (this.scrollY >= 560) {
+        scrollUp?.classList.add('show-scroll');
+    } else {
+        scrollUp?.classList.remove('show-scroll');
+    }
+}
+window.addEventListener('scroll', scrollUp);
+
+/*==================== MODAL FUNCTIONS ====================*/
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // Restore scrolling when modal is closed
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+};
+    const scrollUp = document.getElementById('scroll-up');
     if (window.scrollY >= 560) {
         scrollUp?.classList.add('show-scroll');
     } else {
